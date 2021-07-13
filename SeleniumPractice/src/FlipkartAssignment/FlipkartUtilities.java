@@ -8,6 +8,7 @@ public class FlipkartUtilities {
 
 	//locators
 	public static String loginPopupCloseButton = "//button[@class='_2KpZ6l _2doB4z']";
+	public static String searchBarDiv = "//div[@class='col-12-12 _2oO9oE']";
 	public static String searchBar = "//input[@title='Search for products, brands and more'][@placeholder='Search for products, brands and more']";
 	public static String productName = "//div[@class='_4rR01T']";
 	public static String nextPage = "//span[text()='Next']";
