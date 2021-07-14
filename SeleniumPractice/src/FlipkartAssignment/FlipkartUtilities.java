@@ -13,7 +13,9 @@ public class FlipkartUtilities {
 	public static String productName = "//div[@class='_4rR01T']";
 	public static String nextPage = "//span[text()='Next']";
 	public static String productImge = "//div//div[@class='CXW8mj']//img[@class='_396cs4 _3exPp9']";
-//	public static String productName = "._4rR01T";
+	public static String productSpecificationDiv = "//li[@class='rgWa7D']";
+	public static String productSpecification = "//div[text()='APPLE iPhone SE (Black, 64 GB)']/following-sibling::div[2]/ul/li";
+//	public static String productSpecificationli = "//div[@class='fMghEO']/ul";
 	
 	//data
 	public static String searchBarKeys = "samsung galaxy mobile";
