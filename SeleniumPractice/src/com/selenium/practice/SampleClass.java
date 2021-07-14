@@ -1,4 +1,4 @@
-package com.selenium.sample;
+package com.selenium.practice;
 
 public class SampleClass {
 

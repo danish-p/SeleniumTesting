@@ -7,6 +7,8 @@ import java.util.Scanner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FlipkartAssignmentClass {
 
@@ -105,11 +107,12 @@ public class FlipkartAssignmentClass {
 		// check that next page is available or not
 		// findElement() will generate an exception i.e. NoSuchElementException
 		// findElements() will not generate any exception
-		try {
+		try {		
 			List<WebElement> nextPageElement = obj.driver.findElements(By.xpath(FlipkartUtilities.nextPage));
-			while(!nextPageElement.isEmpty() && nextPageElement.get(0).isDisplayed()) {
+			while(nextPageElement != null && !nextPageElement.isEmpty() && nextPageElement.get(0).isDisplayed()) {
 				nextPageElement.get(0).click();
 				obj.fetchProductListFromSite();
+				nextPageElement = obj.driver.findElements(By.xpath(FlipkartUtilities.nextPage));
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
