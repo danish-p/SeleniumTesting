@@ -100,7 +100,7 @@ public class FlipkartAssignmentClass {
 
 		// fetch product names once page gets load
 		obj.fetchProductListFromSite();
-
+		
 		// print product names
 		//		obj.printProductList(obj.productList);
 
