@@ -14,6 +14,7 @@ public class BaseUtilities {
 	public static String demoQAFormURL = "https://demoqa.com/automation-practice-form";
 	public static String demoQAToolTip = "https://demoqa.com/tool-tips";
 	public static String demoQAWindow = "https://demoqa.com/browser-windows";
+	public static String ebayURL = "https://www.ebay.com/";
 
 // locators	
 	public static String googleSearchBar = "//input[@aria-label='Search']";
@@ -26,6 +27,8 @@ public class BaseUtilities {
 	public static String toolTipButton = "//button[@id='toolTipButton']";
 	public static String newWindowBtn = "//button[@id='windowButton']";
 	public static String newWindowBtnWithMsg = "//button[@id='messageWindowButton']";
+	public static String ebayElectronics = "//li/a[text()='Electronics']";
+	public static String ebayApple = "//li/a[text()='Apple']";
 	
 	
 	public static ChromeDriver getChromeDriver(String URL, boolean isMaximize) {
