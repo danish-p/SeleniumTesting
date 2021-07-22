@@ -26,6 +26,8 @@ public class BrowserOperations {
 		driver.navigate().forward();
 		System.out.println("Current Path forward() : "+driver.getCurrentUrl());
 
+		driver.navigate().refresh();
+		
 		Thread.sleep(5000);
 
 		addDownArrowElement = driver.findElement(By.cssSelector(BaseUtilities.closeAddArrow));

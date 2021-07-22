@@ -6,7 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class OpenWindowsClass {
+public class WindowsHandlingClass {
 
 	static WebDriver driver;
 	
